@@ -1,0 +1,25 @@
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  &-link {
+    color: inherit;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    width: 300px;
+    z-index: 99;
+    border-left: 1px solid $gray-lighted-color;
+    flex-direction: column;
+    gap: 30px 0;
+    padding-top: 90px;
+    align-items: stretch;
+  }
+}
